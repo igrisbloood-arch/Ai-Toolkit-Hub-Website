@@ -10,6 +10,4 @@
 google.com, PUB-ID, DIRECT, f08c47fec0942fa0
 
 # ---- Adsterra ----
-# Replace PUBLISHER-ID below with your Adsterra Publisher ID
-# Find it in your Adsterra dashboard under account/site settings
-adsterra.com, PUBLISHER-ID, DIRECT
+adsterra.com, 6037501, DIRECT
