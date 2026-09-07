@@ -1,0 +1,15 @@
+# ads.txt for AI Toolkit Hub
+# This file must be uploaded to your domain ROOT, e.g.:
+#   https://yourdomain.com/ads.txt
+# (not inside a subfolder — ad networks check the root path only)
+
+# ---- Google AdSense ----
+# Replace PUB-ID below with your AdSense Publisher ID
+# Find it at: AdSense account -> Account -> Account information -> Publisher ID
+# Format looks like: pub-1234567890123456
+google.com, PUB-ID, DIRECT, f08c47fec0942fa0
+
+# ---- Adsterra ----
+# Replace PUBLISHER-ID below with your Adsterra Publisher ID
+# Find it in your Adsterra dashboard under account/site settings
+adsterra.com, PUBLISHER-ID, DIRECT
