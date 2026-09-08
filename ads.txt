@@ -4,10 +4,4 @@
 # (not inside a subfolder — ad networks check the root path only)
 
 # ---- Google AdSense ----
-# Replace PUB-ID below with your AdSense Publisher ID
-# Find it at: AdSense account -> Account -> Account information -> Publisher ID
-# Format looks like: pub-1234567890123456
-google.com, PUB-ID, DIRECT, f08c47fec0942fa0
-
-# ---- Adsterra ----
-adsterra.com, 6037501, DIRECT
+google.com, pub-6867776156097075, DIRECT, f08c47fec0942fa0
