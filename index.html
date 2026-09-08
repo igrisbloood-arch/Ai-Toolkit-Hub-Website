@@ -207,8 +207,20 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="assets/hero-bg.js"></script>
+<script>
+  // Only load the 3D particle animation on larger screens — it's purely
+  // decorative and was the biggest performance cost on mobile devices.
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    var threeScript = document.createElement('script');
+    threeScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+    threeScript.onload = function () {
+      var heroBgScript = document.createElement('script');
+      heroBgScript.src = 'assets/hero-bg.js';
+      document.body.appendChild(heroBgScript);
+    };
+    document.body.appendChild(threeScript);
+  }
+</script>
 <script src="assets/script.js"></script>
 </body>
 </html>
