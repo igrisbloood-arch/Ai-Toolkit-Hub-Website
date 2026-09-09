@@ -756,6 +756,17 @@ section { padding: 96px 0; }
 
 .article-body p { margin: 0 0 1.2em 0; }
 
+.article-body a {
+  color: var(--amber-soft);
+  text-decoration: underline;
+  text-decoration-color: rgba(240, 180, 41, 0.35);
+  text-underline-offset: 2px;
+}
+
+.article-body a:hover {
+  text-decoration-color: var(--amber-soft);
+}
+
 .article-body h3 {
   font-size: 1.12rem;
   margin: 1.6em 0 0.6em;
