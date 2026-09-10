@@ -1,7 +1,0 @@
-# ads.txt for AI Toolkit Hub
-# This file must be uploaded to your domain ROOT, e.g.:
-#   https://yourdomain.com/ads.txt
-# (not inside a subfolder — ad networks check the root path only)
-
-# ---- Google AdSense ----
-google.com, pub-6867776156097075, DIRECT, f08c47fec0942fa0
