@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aitoolkithub.com/sitemap.xml
+Sitemap: https://aitoolkitshub.com/sitemap.xml
