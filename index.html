@@ -6,7 +6,11 @@
 <title>AI ToolKit Hub — Practical AI Tools, Explained Simply</title>
 <meta name="description" content="AI ToolKit Hub breaks down the AI tools and trends actually worth your time — clear, practical articles with no fluff.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Sora:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="preload" as="image" href="assets/images/poster-home.webp" fetchpriority="high">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6867776156097075" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -40,7 +44,8 @@
     </div>
     <div class="hero-media">
       <!-- Home page header video: assets/videos/hero-home.mp4 -->
-      <video autoplay muted loop playsinline poster="assets/images/poster-home.jpg">
+      <video autoplay muted loop playsinline poster="assets/images/poster-home.webp">
+        <source src="assets/videos/hero-home-mobile.mp4" type="video/mp4" media="(max-width: 860px)">
         <source src="assets/videos/hero-home.mp4" type="video/mp4">
       </video>
     </div>
@@ -110,8 +115,9 @@
       <p>Most "AI news" sites either oversell every new tool or bury you in jargon. We do neither.</p>
     </div>
     <div class="page-video-banner reveal">
-      <video autoplay muted loop playsinline poster="assets/images/poster-why.jpg">
-        <source src="assets/videos/hero-why.mp4" type="video/mp4">
+      <video muted loop playsinline poster="assets/images/poster-why.webp" data-lazy-video preload="none">
+        <source data-src="assets/videos/hero-why-mobile.mp4" type="video/mp4" media="(max-width: 860px)">
+        <source data-src="assets/videos/hero-why.mp4" type="video/mp4">
       </video>
     </div>
     <div class="value-grid">
@@ -166,6 +172,65 @@
 
 <section>
   <div class="container">
+    <div class="editor-pick reveal">
+      <div class="editor-pick-media">
+        <img src="assets/images/article-1-thumb.webp" alt="What is AI and How Does It Actually Work — A Beginner's Guide" loading="lazy" decoding="async">
+      </div>
+      <div class="editor-pick-body">
+        <span class="editor-pick-tag">Editor's Pick</span>
+        <h3><a href="articles/article-1.html">What is AI and How Does It Actually Work — A Beginner's Guide</a></h3>
+        <p>New to all this? Start here. It skips the sci-fi buzzwords and explains, in plain language, what's actually happening when you use a tool like ChatGPT — no coding background needed.</p>
+        <a href="articles/article-1.html" class="btn btn-outline">Read the guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>AI Jargon Buster</h2>
+      <p>Quick, honest definitions for the terms you keep hearing but nobody quite explains. Tap a question to expand it.</p>
+    </div>
+    <div class="glossary-grid">
+      <details class="glossary-item reveal">
+        <summary>What is an LLM?</summary>
+        <p>Short for "Large Language Model" — the type of AI behind ChatGPT, Claude, and Gemini. It's trained on huge amounts of text to predict what word should come next, which is how it ends up able to write, answer questions, and hold a conversation.</p>
+      </details>
+      <details class="glossary-item reveal">
+        <summary>What is a "token"?</summary>
+        <p>The small chunks of text an AI model actually reads and writes in — often a word or part of a word. It's why AI tools sometimes charge or limit you by "tokens used" instead of by word count.</p>
+      </details>
+      <details class="glossary-item reveal">
+        <summary>What is a "prompt"?</summary>
+        <p>Simply the instructions or question you type in. The skill of writing clear, specific prompts is often the biggest difference between a useless AI answer and a genuinely useful one.</p>
+      </details>
+      <details class="glossary-item reveal">
+        <summary>What is a "context window"?</summary>
+        <p>The amount of text an AI can "remember" at once during a conversation — including everything you've typed so far. Once you go past it, the model starts forgetting the earliest parts of the chat.</p>
+      </details>
+      <details class="glossary-item reveal">
+        <summary>What does "fine-tuning" mean?</summary>
+        <p>Taking an already-trained AI model and training it a bit further on a specific, narrower set of examples — so it gets better at one particular task or style without starting from scratch.</p>
+      </details>
+      <details class="glossary-item reveal">
+        <summary>What are "parameters"?</summary>
+        <p>The internal settings a model adjusts while learning from data — often quoted in the billions for modern AI. More parameters can mean more capability, but not always; how a model is trained matters just as much.</p>
+      </details>
+      <details class="glossary-item reveal">
+        <summary>What does "multimodal" mean?</summary>
+        <p>An AI that can work with more than just text — understanding or generating images, audio, or video too, not only written language.</p>
+      </details>
+      <details class="glossary-item reveal">
+        <summary>What's the difference between "open-source" and "closed" AI models?</summary>
+        <p>Open-source models publish their underlying weights so anyone can download, inspect, or run them. Closed models (like most versions of ChatGPT) are only accessible through the company's own app or API — you can use them, but not see or run the model yourself.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
     <div class="section-head reveal">
       <h2>Start exploring</h2>
       <p>A growing library of articles covering the AI tools, techniques, and trends that matter right now — with more added regularly.</p>
@@ -208,7 +273,24 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "name": "AI Jargon Buster",
+  "description": "Plain-language definitions of common AI terms.",
+  "hasDefinedTerm": [
+    { "@type": "DefinedTerm", "name": "LLM", "description": "Short for \"Large Language Model\" — the type of AI behind ChatGPT, Claude, and Gemini, trained on huge amounts of text to predict what word should come next." },
+    { "@type": "DefinedTerm", "name": "Token", "description": "The small chunks of text an AI model reads and writes in, often a word or part of a word." },
+    { "@type": "DefinedTerm", "name": "Prompt", "description": "The instructions or question a person types into an AI tool." },
+    { "@type": "DefinedTerm", "name": "Context window", "description": "The amount of text an AI can remember at once during a conversation." },
+    { "@type": "DefinedTerm", "name": "Fine-tuning", "description": "Training an already-built AI model further on a narrower set of examples so it improves at one specific task." },
+    { "@type": "DefinedTerm", "name": "Parameters", "description": "The internal settings a model adjusts while learning from data, often quoted in the billions for modern AI." },
+    { "@type": "DefinedTerm", "name": "Multimodal", "description": "An AI that can work with more than text, such as images, audio, or video." },
+    { "@type": "DefinedTerm", "name": "Open-source model", "description": "An AI model whose underlying weights are published so anyone can download, inspect, or run it." }
+  ]
+}
+</script>
 <script src="assets/hero-bg.js"></script>
 <script src="assets/script.js"></script>
 </body>
